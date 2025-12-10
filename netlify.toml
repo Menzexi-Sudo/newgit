@@ -1,0 +1,10 @@
+# Netlify 配置文件：指定函数文件夹和路由规则
+[build]
+  functions = "functions" 
+  command = "npm install" # 部署时运行此命令安装依赖
+
+# 配置路由：将 /api/proxy 路由到我们的函数
+[[redirects]]
+  from = "/api/proxy"
+  to = "/.netlify/functions/binance-proxy"
+  status = 200
