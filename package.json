@@ -1,0 +1,8 @@
+{
+  "name": "binance-gas-proxy",
+  "version": "1.0.0",
+  "description": "Binance API Proxy for Google Apps Script",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
