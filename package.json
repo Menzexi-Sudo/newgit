@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Binance API Proxy for Google Apps Script",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "http-proxy-agent": "^5.0.0"  // 理论上应该部署在亚洲，但我们加上这个，以防万一
+  },
+  "engines": {
+    "node": "16" // 锁定 Node.js 版本，可能影响部署区域
   }
 }
